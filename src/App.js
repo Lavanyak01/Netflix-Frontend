@@ -5,9 +5,6 @@ import HomePage from './Pages/HomePage';
 
 function App() {
   return (
-   
-    //<SignupPage />
-    //<SignInPage />
     <HomePage />
     // <div className="App">
     //   <header className="App-header">
