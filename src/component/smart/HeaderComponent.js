@@ -19,7 +19,7 @@ function HeaderComponent(){
             </NavBar>
             <FeatureWrapper className='feature-wrapper-home'>
                 <FeatureTitle className='feature-title-home'>
-                    Unlimited movies, Tv Shows & More.
+                    Unlimited movies, TV Shows & More.
                 </FeatureTitle>
                 <FeatureTitle className='feature-title-tag'>
                     Watch anywhere. Cancel anytime.
