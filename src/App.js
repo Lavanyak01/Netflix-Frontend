@@ -5,7 +5,8 @@ import HomePage from './Pages/HomePage';
 
 function App() {
   return (
-    <HomePage />
+    <>
+      <HomePage />
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
@@ -22,6 +23,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+    </>
   );
 }
 
