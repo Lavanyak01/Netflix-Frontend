@@ -4,7 +4,7 @@ import './SubscribeButton.css';
 function SubscribeButton({ children, ...restProps}){
     return (
         <div className='subscribe-button'>
-            <a  href='#' {...restProps}>
+            <a  href='/login' {...restProps}>
                 {children}
             
             <img className='subscribe-button-image' src='../../../../../images/icons/right-arrow.png' alt='Try Now' />
