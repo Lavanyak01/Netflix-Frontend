@@ -6,7 +6,7 @@ import SignButton from "../../dumb/SignButton/SignButton";
 import SignText from "../../dumb/SignText/SignText";
 import SignLink from "../../dumb/SignLink/SignLink";
 import SignCaptcha from "../../dumb/SignCaptcha/SignCaptcha";
-
+import { Link } from "react-router-dom";
 
 function SignInComponent({ children, ...restProps}) {
     return (
@@ -23,7 +23,7 @@ function SignInComponent({ children, ...restProps}) {
                 autoComplete='off'
              />
              <SignButton> Sign In</SignButton>
-             <SignText> New to Netflix? <SignLink> Signup Now</SignLink></SignText>
+             <SignText> New to Netflix? <Link to='/signup'><SignLink> Signup Now</SignLink></Link></SignText>
              <SignCaptcha>This page is protected by Google reCAPTCHA to ensure you're not a bot.</SignCaptcha>
            </form>
         </div>
