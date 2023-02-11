@@ -1,21 +1,24 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from './Pages/HomePage';
-import SignupPage from './Pages/SignupPage';
+import NetflixShow from './Pages/NetflixShow/NetflixShow';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignInPage from './Pages/SignInPage';
-
+import SignupPage from './Pages/SignupPage';
 
 
 function App() {
   return (
-     <BrowserRouter>
+    <>
+   <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route  path="/signup" element={<SignupPage />} />
-        <Route  path="/login" element={<SignInPage />} />
+        <Route exact path="/" element={ <HomePage />} />
+        <Route path="/login"  element={ <SignInPage /> } />
+        <Route path="/signup"  element={ <SignupPage /> } />
+        <Route path='/shows' element={<NetflixShow />} />
       </Routes>
     </BrowserRouter>
-  );
+    </>
+    );
 }
 
 export default App;
