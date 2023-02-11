@@ -6,6 +6,7 @@ import SignButton from "../../dumb/SignButton/SignButton";
 import SignText from "../../dumb/SignText/SignText";
 import SignLink from "../../dumb/SignLink/SignLink";
 import SignCaptcha from "../../dumb/SignCaptcha/SignCaptcha";
+import { Link } from "react-router-dom";
 
 
 function SignupComponent({ children, ...restProps}) {
@@ -27,7 +28,7 @@ function SignupComponent({ children, ...restProps}) {
                 autoComplete='off'
              />
              <SignButton> Sign Up</SignButton>
-             <SignText> Already a user ? <SignLink> SignIn Now</SignLink></SignText>
+             <SignText> Already a user ?<Link to='/login'><SignLink> SignIn Now</SignLink></Link> </SignText>
              <SignCaptcha>This page is protected by Google reCAPTCHA to ensure you're not a bot.</SignCaptcha>
            </form>
         </div>
