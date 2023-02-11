@@ -1,6 +1,5 @@
 import './App.css';
 import HomePage from './Pages/HomePage';
-import NetflixShow from './Pages/NetflixShow/NetflixShow';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignInPage from './Pages/SignInPage';
 import SignupPage from './Pages/SignupPage';
@@ -14,7 +13,6 @@ function App() {
         <Route exact path="/" element={ <HomePage />} />
         <Route path="/login"  element={ <SignInPage /> } />
         <Route path="/signup"  element={ <SignupPage /> } />
-        <Route path='/shows' element={<NetflixShow />} />
       </Routes>
     </BrowserRouter>
     </>
